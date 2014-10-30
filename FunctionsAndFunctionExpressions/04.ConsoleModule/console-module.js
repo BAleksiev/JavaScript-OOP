@@ -16,7 +16,7 @@ var specialConsole = function () {
     
     function fillPlaceholders(str, args) {
         for (var i = 0; i < args.length; i++) {
-            str = str.replace('{' + i + '}', args[i]);
+            str = str.replace('{' + i + '}', args[i].toString());
         }
         
         return str;
